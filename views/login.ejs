@@ -1,0 +1,46 @@
+<header class="header">
+    <nav class="nav nav--tours">
+      <a href="/" class="nav__el">All tours</a>
+    </nav>
+    <div class="header__logo">
+      <img src="img/logo-white.png" alt="Natours logo" />
+    </div>
+    <nav class="nav nav--user">
+      <!-- <a href="#" class="nav__el">My bookings</a>
+      <a href="#" class="nav__el">
+        <img src="img/users/user.jpg" alt="User photo" class="nav__user-img" />
+        <span>Jonas</span>
+      </a> -->
+
+              <button class="nav__el nav__el--cta">Sign up</button>
+    </nav>
+  </header>
+<main class="main">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+          rel="stylesheet"
+        />
+    
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    
+      </head>
+    <div action="api/v1/users/login" method="POST" class="login-form">
+        <h2 class="heading-secondary ma-bt-lg">Log into your account</h2>
+        <form class="form">
+            <div class="form__group"><label class="form__label" for="email">Email address</label><input class="form__input" id="email" type="email" placeholder="you@example.com" required="required" /></div>
+            <div class="form__group ma-bt-md"><label class="form__label" for="password">Password</label><input class="form__input" id="password" type="password" placeholder="••••••••" required="required" minlength="8" /></div>
+            <div class="form__group"><button class="btn btn--green" onclick="submit">Login</button></div>
+        </form>
+    </div>
+</main>
+<%- include('footer.ejs') %>
+<!-- <script src="https://js.stripe.com/v3/"></script>
+<script src="/js/bundle.js"></script> -->
+<script src="/public/img/js/login.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"></script> -->
